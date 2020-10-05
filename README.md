@@ -65,3 +65,41 @@ Container(
       ),
     )
 ```
+
+
+
+#RxDart simple Example
+
+```
+// First File
+import 'package:rxdart/rxdart.dart';
+
+class RxListUpdate {
+  int _noteClass;
+
+  int get noteClass => _noteClass;
+
+  RxListUpdate(this._noteClass){
+    this.onListUpdater = BehaviorSubject<int>.seeded(noteClass);
+  }
+  BehaviorSubject<int> onListUpdater;
+
+  Future onListUpdate(int newList) async {
+    _noteClass = model.sortMap(newList);
+    onListUpdater.add(_noteClass);
+  }
+}
+
+// Main File
+
+RxListUpdate listUpdate = RxListUpdate(map);
+
+StreamBuilder<int>(
+          stream: listUpdate.onListUpdater,
+          builder: (buildContext, snapshot) {
+            int list = snapshot.data;
+            return ListView(
+              children: ,
+            );
+          })
+ ```
