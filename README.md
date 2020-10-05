@@ -14,3 +14,16 @@ Container(
           borderRadius: BorderRadius.all(Radius.circular(10))),
     )
 ```
+
+
+# FlatButton radius corner
+
+```
+FlatButton(
+      shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(18.0),
+          side: BorderSide(color: Colors.blueGrey)
+      ),
+      onPressed: (){},
+  )
+```
