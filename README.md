@@ -2,9 +2,9 @@
 My experience in one repo
 
 
-1. # Container radius corner
+# Container radius corner
   
-Radius with color border and backGround
+```Radius with color border and backGround
 Container(
       decoration: BoxDecoration(
           color: model.cardColor,
@@ -13,4 +13,4 @@ Container(
           ),
           borderRadius: BorderRadius.all(Radius.circular(10))),
     )
-    
+```
