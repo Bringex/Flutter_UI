@@ -67,11 +67,10 @@ Container(
 ```
 
 
-
-#RxDart simple Example
+# RxDart simple Example
 
 ```
-// First File
+// Rx File
 import 'package:rxdart/rxdart.dart';
 
 class RxListUpdate {
