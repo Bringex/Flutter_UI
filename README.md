@@ -1,7 +1,7 @@
 # Flutter_UI
 My experience in one repo
 
-![cccc](RC.jpg)
+![cccc](RC.JPG)
 # Container radius corner
   
 ```Radius with color border and backGround
