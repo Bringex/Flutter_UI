@@ -52,7 +52,34 @@ Location location = new Location();
   }
 ```
 
+# Shared Preferences
 
+```
+import 'package:shared_preferences/shared_preferences.dart';
+
+//some set:
+Future<void> setCheck() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    try{ 
+      prefs.setInt('counter', 1);
+      return true;
+    }catch(E){
+      return false;  
+    }
+}
+
+//some get:
+Future<String> getPass() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    try{
+      String pass = prefs.getString('pass');
+      return pass;
+    }catch(E){
+      return "null";
+    }
+}
+
+```
 
 
 
