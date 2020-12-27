@@ -1,3 +1,33 @@
+# main routs
+```
+import 'package:flutter/material.dart';
+
+import 'files/choose_screen.dart';
+import 'model/model.dart';
+
+
+Model model = Model();
+
+
+void main() => runApp(
+
+    MaterialApp(
+        home: MaterialApp(
+          initialRoute: '/',
+          routes: {
+            '/': (context) => ChooseScreen(),
+            //'/home': (context) => HomeScreen(),
+            //'/loader_home': (context) => HomePreloader(),
+          },
+        )
+    )
+);
+
+```
+
+
+
+
 # http requests
 
 
@@ -80,6 +110,7 @@ Future<String> getPass() async {
 }
 
 ```
+
 
 
 
