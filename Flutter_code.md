@@ -105,18 +105,27 @@ Future<String> getPass() async {
 ```
 
 
-# alert Dialogs
+# alert Dialog
 
 ```
+
+Widget okButton = FlatButton(
+    child: Text("Ок"),
+    onPressed: () {
+      Navigator.of(context, rootNavigator: true)
+          .pop(); // this is close alert )
+    },
+  );
+
 AlertDialog alert = AlertDialog(
     title: Text("Ошибка"),
     content: Text("Неверный логин или пароль"),
     actions: [
-      okButton,
+      okButton, //some buttons
     ],
   );
                               
-  showDialog(
+showDialog(
     context: context,
     builder: (BuildContext context) {
       return alert;
