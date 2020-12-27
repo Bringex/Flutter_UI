@@ -2,13 +2,6 @@
 ```
 import 'package:flutter/material.dart';
 
-import 'files/choose_screen.dart';
-import 'model/model.dart';
-
-
-Model model = Model();
-
-
 void main() => runApp(
 
     MaterialApp(
@@ -108,6 +101,27 @@ Future<String> getPass() async {
       return "null";
     }
 }
+
+```
+
+
+# alert Dialogs
+
+```
+AlertDialog alert = AlertDialog(
+    title: Text("Ошибка"),
+    content: Text("Неверный логин или пароль"),
+    actions: [
+      okButton,
+    ],
+  );
+                              
+  showDialog(
+    context: context,
+    builder: (BuildContext context) {
+      return alert;
+    },
+  );
 
 ```
 
