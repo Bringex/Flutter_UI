@@ -1,6 +1,7 @@
-#Http requests 
+# Flutter code 
 
-Future<bool> getHttp() async {
+# http requests
+```Future<bool> getHttp() async {
 
     var res = await http.get("");
 
@@ -9,5 +10,7 @@ Future<bool> getHttp() async {
 
     return true;
 }
+```
+
 
 
