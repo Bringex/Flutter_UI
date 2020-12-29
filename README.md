@@ -1,10 +1,10 @@
 # Flutter_UI
-My experience in one repo
+This rep will save your time (maybe :3 )
 
-What i want to learn in mobile:
+Need more:
 - more deeper dive into it
 - I want learn more in flutter (ios compile and etc)
-- Want to remind kotlin in high level
+- cyber
 
 # Container radius corner
 ![cccc](RC.JPG)
