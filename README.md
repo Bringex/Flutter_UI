@@ -21,15 +21,15 @@ Container(
 
 
 # FlatButton radius corner
-
+![cccc](flatbut.JPG)
 ```
 FlatButton(
-      shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(18.0),
-          side: BorderSide(color: Colors.blueGrey)
-      ),
-      onPressed: (){},
-  )
+    shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(18.0),
+        side: BorderSide(color: Colors.black)
+    ),
+    color: Colors.deepPurple,
+    onPressed: (){},
 ```
 
 # TextField with controller
