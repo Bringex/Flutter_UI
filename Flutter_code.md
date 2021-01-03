@@ -134,6 +134,7 @@ showDialog(
 
 ```
 
-
+# purchases
+flutter_inapp_purchase: ^3.0.1
 
 
