@@ -107,3 +107,29 @@ StreamBuilder<int>(
             );
           })
  ```
+ 
+# SlidingUp panel
+
+import 'package:sliding_up_panel/sliding_up_panel.dart'; //u can search it on web
+```
+PanelController _pc = new PanelController();
+@override
+  Widget build(BuildContext context) {
+    return  Scaffold(
+        body: 
+            SlidingUpPanel(
+              maxHeight: height - 140,
+              controller: _pc,
+              minHeight: 0,
+              panel: someWidget(context),
+            )
+
+    );
+  }
+
+//and in some place of code smth like this:
+onTap: () {
+    setState(() {
+      _pc.open();
+    });
+}
