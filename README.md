@@ -30,6 +30,7 @@ FlatButton(
     ),
     color: Colors.deepPurple,
     onPressed: (){},
+)
 ```
 
 # TextField with controller
