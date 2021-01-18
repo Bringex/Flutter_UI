@@ -133,3 +133,26 @@ onTap: () {
       _pc.open();
     });
 }
+
+```
+
+
+# FutureBuilder 
+```
+FutureBuilder(
+          future: downloadData(),
+          builder: (BuildContext context, AsyncSnapshot<String> snapshot){
+                switch (snapshot.connectionState) {
+                  case ConnectionState.none:
+                    return new Text('Press button to start');
+                  case ConnectionState.waiting:
+                    return new Text('Awaiting result...');
+                default:
+                  if (snapshot.hasError)
+                    return new Text('Error: ${snapshot.error}');
+                  else
+                    return new Text('Result: ${snapshot.data}');
+            }
+          }
+        ),
+```
