@@ -183,3 +183,28 @@ class NoAnimationMaterialPageRoute<T> extends MaterialPageRoute<T> {
   }
 }
 ```
+# PageView 
+```
+@override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: Scaffold(
+            body: Container(
+              color: setColors.backGroundColor,
+              child: SafeArea(
+                child: PageView(
+                  //physics:new NeverScrollableScrollPhysics(),
+                  controller: controller,
+                  children: <Widget>[
+
+                    firstScreen(context), // Some widget
+                    secondScreen(context)
+                  ],
+                )
+              ),
+            )
+        )
+
+    );
+  }
+```
