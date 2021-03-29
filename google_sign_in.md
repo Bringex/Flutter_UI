@@ -20,6 +20,8 @@ signingConfigs {
     }
 ```
 
+And get into sime dart file:  
+
 ```
 // Global
 GoogleSignIn googleSignIn;
@@ -28,9 +30,7 @@ GoogleSignIn googleSignIn;
       'email'
     ],
   );
-```
 
-```
 void handleSignIn() async {
 
     try{
