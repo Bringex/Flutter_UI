@@ -20,7 +20,7 @@ signingConfigs {
     }
 ```
 
-And get into sime dart file:  
+And past that into some dart file:  
 
 ```
 // Global
