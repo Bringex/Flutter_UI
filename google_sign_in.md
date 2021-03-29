@@ -4,8 +4,8 @@
 ```
 keytool -genkey -v -keystore c:\Users\Mi\NAME.jks -storetype JKS -keyalg RSA -keysize 2048 -validity 10000 -alias NAME
 ```
-after password get SHA-1 and
-2. Create credential
+after password get SHA-1 and  
+2. Create credential  
 3. Import this key into project:
 
 ```
