@@ -55,3 +55,6 @@ void handleSignIn() async {
 
   }
 ```
+
+
+https://medium.com/flutter-community/flutter-sign-in-with-google-in-android-without-firebase-a91b977d166f
