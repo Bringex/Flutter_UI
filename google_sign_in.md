@@ -1,5 +1,5 @@
 ## Google sign in
-1 Get new app in https://console.cloud.google.com/
+1 Get new app in https://console.cloud.google.com/  
 2 Generate Dubug key:
 ```
 keytool -genkey -v -keystore c:\Users\Mi\NAME.jks -storetype JKS -keyalg RSA -keysize 2048 -validity 10000 -alias NAME
