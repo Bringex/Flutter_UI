@@ -1,12 +1,12 @@
 ## Google sign in
-1. Get new app in https://console.cloud.google.com/
-2. Generate Dubug key:
+1) Get new app in https://console.cloud.google.com/
+2) Generate Dubug key:
 ```
 keytool -genkey -v -keystore c:\Users\Mi\NAME.jks -storetype JKS -keyalg RSA -keysize 2048 -validity 10000 -alias NAME
 ```
 after password get SHA-1 and  
-2. Create credential  
-3. Import this key into project:
+3) Create credential  
+4) Import this key into project:
 
 ```
 //app/build.gradle
