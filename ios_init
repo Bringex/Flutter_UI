@@ -1,0 +1,32 @@
+### command line
+
+cd /Users/Name/Flutter
+
+nano ~/.bush_profile
+
+(тут открывается файл)
+export PATH="/Users/Name/Flutter/bin:$PATH"
+
+save
+source ~/.bush_profile
+
+(PATH added)
+check: Flutter run
+
+next open Project and type Flutter run
+
+
+next install Cocoapods
+
+
+Connect firebase:
+- add to runner downloaded file
+- fo to project/ios/
+- type open PodFile
+add to file:
+pod 'Firebase/Analytics' 
+
+and others:
+https://firebase.google.com/docs/ios/setup#available-pods
+
+type pod install
