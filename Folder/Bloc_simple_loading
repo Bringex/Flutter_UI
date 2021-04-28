@@ -1,0 +1,25 @@
+import 'dart:async';
+
+
+// simple 
+class someClass{
+
+BehaviorSubject<String> _isLoading = BehaviorSubject<String>();
+BehaviorSubject<String> get loading => _isLoading;
+
+// _isLoading.sink.add();
+}
+
+// or
+
+
+enum LoadingStates { LOADING, NOLOADING }
+class someClass{
+
+BehaviorSubject<LoadingStates> loading = BehaviorSubject<LoadingStates>();
+BehaviorSubject<LoadingStates> get loadingStream => loading;
+
+//loading.sink.add(LoadingStates.NOLOADING);
+
+}
+
