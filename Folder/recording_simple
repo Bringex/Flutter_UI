@@ -1,0 +1,43 @@
+import 'package:random_string/random_string.dart';
+import 'package:path_provider/path_provider.dart';
+import 'package:audio_recorder/audio_recorder.dart';
+import 'dart:io';
+
+class RecordBloc{
+  bool hasPermissions;
+  bool isRecording;
+  String path;
+
+
+  Future<bool> init() async {
+     hasPermissions = await AudioRecorder.hasPermissions;
+     isRecording = await AudioRecorder.isRecording;
+     Directory dir = await getApplicationDocumentsDirectory();
+     path =  dir.path + "/" + randomAlphaNumeric(10);
+
+     if (hasPermissions && !isRecording)
+        return true;
+     return false;
+
+  }
+
+  Future<bool> startRecording() async {
+    await AudioRecorder.start(path: path, audioOutputFormat: AudioOutputFormat.AAC);
+    return true;
+  }
+
+  Future<bool> stopRecording() async {
+    var recording = await AudioRecorder.stop();
+    print("Stop recording: ${recording.path}");
+    isRecording = await AudioRecorder.isRecording;
+    File file = File(recording.path);
+    print("  File length: ${await file.length()}");
+
+    // request to server or another actions
+
+    return true;
+  }
+
+}
+
+final recordBloc = RecordBloc();
